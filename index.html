@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>WORLD ATM V5</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<section id="auth" class="auth"><h1>🌍 WORLD ATM V5</h1><div class="box">
+<h2>ورود</h2><input id="u" placeholder="نام کاربری"><input id="p" type="password" placeholder="رمز عبور">
+<button onclick="login()">ورود 🚀</button><button class="sec" onclick="register()">ثبت‌نام</button><p id="m"></p>
+<div class="demo">👑 creator / 999999<br>🛡️ admin / 123456</div></div></section>
+
+<section id="app" class="hide"><header><b>🌍 WORLD ATM V5</b><button onclick="logout()">خروج</button></header>
+<main>
+<div class="card"><h2 id="name">---</h2><p id="role">PLAYER</p></div>
+<div id="event" class="event hide"></div>
+<h2>💰 موجودی</h2><div class="grid">
+<div class="money">دلار<strong id="usd">0</strong></div><div class="money">تومان<strong id="tom">0</strong></div><div class="money">ریال<strong id="rial">0</strong></div></div>
+<h2>📈 بازار مجازی</h2><div class="grid">
+<div class="money">USD<strong id="mu">1</strong></div><div class="money">تومان<strong id="mt">0</strong></div><div class="money">ریال<strong id="mr">0</strong></div></div><p id="market"></p>
+<h2>⚡ امکانات</h2><div class="buttons">
+<button onclick="games()">🎮 بازی</button><button onclick="transferUI()">💸 انتقال</button><button onclick="vipUI()">💎 VIP</button>
+<button onclick="cards()">💳 کارت‌ها</button><button onclick="leader()">🏆 رتبه‌بندی</button><button onclick="historyUI()">📜 تاریخچه</button>
+<button onclick="eventUI()">🎉 Event</button><button id="cb" class="hide" onclick="creator()">👑 سازنده</button><button id="ab" class="hide" onclick="admin()">🛡️ ادمین</button>
+</div><div id="panel" class="card hide"></div>
+</main></section><script src="script.js"></script></body></html>
